@@ -47,12 +47,54 @@
     border: 1px solid #5E3BEE;
     padding: 0px 15px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .landing{
     background: linear-gradient(#5E3BEE -25%, #F5FCFF 17%);
     height: 100vh;
     display: flex;
-    
 }
 
+.landing__content{
+    height: 100vh;
+    display: flex;
+}
+
+
+.landing__left{
+    margin: 40% 1% 0% 8% ;
+    width: 47vw;
+    padding-left: 10px;
+}
+
+.landing__span{
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #282938;
+}
+
+.landing__title{
+    padding: 10px 0px;
+    color: #282938;
+    font-size: 48px;
+}
+
+.landing__description{
+    padding: 10px 0px;
+    color: #282938;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.landing__title--blue{
+    color: #5E3BEE;
+}
+
+.button--blue{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #5E3BEE;
+    color: #fff;
+}
