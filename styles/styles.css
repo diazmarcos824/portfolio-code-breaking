@@ -64,7 +64,7 @@
     margin-top: 12%;
     width: 100%;
     justify-content: space-between;
-    margin-inline: 30px;
+    margin-inline: 40px;
 }
 
 
@@ -107,7 +107,8 @@
 
 .landing__right{
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .landing__overhide{
@@ -116,4 +117,15 @@
     max-height: 300px;
     min-width: 450px;
     border-radius: 40px;
+    margin-top: 23.1%;
+}
+
+.landing__photo-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.landing__photo{
+    max-width: 300px;
 }
