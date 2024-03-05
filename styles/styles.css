@@ -140,12 +140,13 @@
 
 .container{
     height: 100vh;
-    margin: 7% 4%;
+    margin: 7% 0%;
 }
 
 .container__text{
     display: block;
     margin-bottom: 5%;
+    margin-inline: 4%;
 }
 
 .container__span{
@@ -163,6 +164,7 @@
 .container__div{
     display: flex;
     justify-content: space-between;
+    margin-inline: 4%;
 }
 
 .container__cards{
@@ -197,4 +199,12 @@
 .card__description{
     color: #282938;
     font-size: 14px;
+}
+
+.container__footer{
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    background-color: #caddec;
+    min-height: 50px;
 }
