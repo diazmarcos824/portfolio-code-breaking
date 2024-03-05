@@ -8,6 +8,7 @@
 }
 
 .header{
+    display: block;
     position: fixed;
     width: 100vw;
     background-color: #fff;
@@ -54,16 +55,21 @@
     background: linear-gradient(#5E3BEE -25%, #F5FCFF 17%);
     height: 100vh;
     display: flex;
+    width: 100%;
 }
 
 .landing__content{
-    height: 100vh;
+    height: 77vh;
     display: flex;
+    margin-top: 12%;
+    width: 100%;
+    justify-content: space-between;
+    margin-inline: 30px;
 }
 
 
 .landing__left{
-    margin: 40% 1% 0% 8% ;
+    margin-top: 7%;
     width: 47vw;
     padding-left: 10px;
 }
@@ -97,4 +103,17 @@
     padding: 15px;
     background-color: #5E3BEE;
     color: #fff;
+}
+
+.landing__right{
+    display: flex;
+    align-items: center;
+}
+
+.landing__overhide{
+    background-color: #caddec;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 450px;
+    border-radius: 40px;
 }
