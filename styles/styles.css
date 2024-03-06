@@ -227,17 +227,47 @@ i{
 }
 
 .container__bio{
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
-    padding-block: 5px;
+    padding-block: 3px;
 }
 
 .container__button{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .container__photo--end-flex{
     margin-top: 4%;
+}
+
+.container__cards--portfolio{
+    max-width: 400px;
+}
+
+.photo__portfolio{
+    width: 100%;
+}
+
+.container__bio--portfolio-desc{
+    text-decoration: none;
+    color: #282938;
+}
+
+.container__text--flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button--linkedin{
+    font-size: 30px;
+    padding-inline: 30px;
+}
+
+.button--blue-linkedin{
+    padding: 15px;
+    background-color: #5E3BEE;
+    color: #fff;
 }
