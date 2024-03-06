@@ -141,6 +141,7 @@
 .container{
     height: 100vh;
     margin: 7% 0%;
+   /* box-shadow: 0px 15px 10px -15px gray;*/
 }
 
 .container__text{
@@ -200,11 +201,19 @@
     color: #282938;
     font-size: 14px;
 }
-
+/*#2a5852  #282938*/
 .container__footer{
-    margin-top: 3%;
+    margin-top: 8.7%;
     display: flex;
     width: 100%;
-    background-color: #caddec;
+    background-color: #2a5852;
     min-height: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
+
+i{
+    font-size: xx-large;
+    color: #fff;
+}
+
