@@ -171,7 +171,7 @@
 .container__cards{
     background-color: #F5FCFF;
     border-radius: 10px;
-    max-width: 270px;
+    width: 270px;
     min-height: 240px;
     display: flex;
     flex-direction: column;
@@ -243,7 +243,9 @@ i{
 }
 
 .container__cards--portfolio{
-    max-width: 400px;
+    width: 50%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .photo__portfolio{
@@ -270,4 +272,79 @@ i{
     padding: 15px;
     background-color: #5E3BEE;
     color: #fff;
+}
+
+/*Carousel*/
+
+.container__portfolio{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container__div--portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow{
+    position: absolute;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+    transition: .2s ease all;
+}
+
+.arrow:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left--arrow{
+    left: 0;
+}
+
+.right--arrow{
+    right: 0;
+}
+
+.container__pointer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.pointer{
+    background-color: #caddec;
+    height: 5px;
+    width: 15px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.pointer:hover, .pointer.active{
+    background-color: #2a5852;
+}
+
+.carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container__carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container__cards--portfolio{
+
 }
