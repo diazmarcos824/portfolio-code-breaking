@@ -141,7 +141,7 @@
 .container{
     height: 100vh;
     margin: 7% 0% 0%;
-   /* box-shadow: 0px 15px 10px -15px gray;*/
+    /* box-shadow: 0px 15px 10px -15px gray;*/
 }
 
 .container__text{
@@ -243,9 +243,8 @@ i{
 }
 
 .container__cards--portfolio{
-    width: 50%;
+    margin: 10px;
     transition: .3s ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .photo__portfolio{
@@ -287,64 +286,58 @@ i{
     flex-direction: column;
 }
 
-.arrow{
-    position: absolute;
-    border: none;
-    background-color: rgb(0, 0, 0, 0.3);
-    font-size: 40px;
-    height: 20%;
-    top: calc(50% - 10%);
-    line-height: 40px;
-    width: 50px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 3;
-    transition: .2s ease all;
-}
-
-.arrow:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.left--arrow{
-    left: 0;
-}
-
-.right--arrow{
-    right: 0;
-}
-
-.container__pointer{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
-.pointer{
-    background-color: #caddec;
-    height: 5px;
-    width: 15px;
-    cursor: pointer;
-    border: none;
-    margin-right: 2px;
-}
-
-.pointer:hover, .pointer.active{
-    background-color: #2a5852;
-}
-
 .carousel{
-    width: 100%;
+    display: flex;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
-.container__carousel{
-    display: flex;
-    flex-wrap: nowrap;
+.arrow{
+    position: absolute;
+    border: none;
+    background-color: none;
+    font-size: 40px;
+    height: 10%;
+    top: calc(50% - 10%);
+    line-height: 40px;
+    width: 50px;
+    opacity: 20%;
+    cursor: pointer;
+    z-index: 3;
+    transition: .2s ease all;
 }
 
-.container__cards--portfolio{
-    width: 50%;
+.arrow i{
+    color: #2a5852;
+}
+
+.arrow:hover{
+    opacity: 100%;
+    background-color: none;
+}
+
+.left--arrow{
+    left: -40px;
+}
+
+.right--arrow{
+    right: -40px;
+}
+
+.container__pointer .glider-dot{
+    display: block;
+    width: 30px;
+    height: 8px;
+    background-color: black;
+    opacity: .2;
+    border-radius: 0;
+}
+
+.container__pointer .glider-dot:hover{
+    opacity: .5;
+}
+
+.container__pointer .glider-dot.active{
+    opacity: 1;
 }
