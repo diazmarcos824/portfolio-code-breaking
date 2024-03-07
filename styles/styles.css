@@ -292,8 +292,8 @@ i{
     border: none;
     background-color: rgb(0, 0, 0, 0.3);
     font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
+    height: 20%;
+    top: calc(50% - 10%);
     line-height: 40px;
     width: 50px;
     color: #fff;
@@ -346,5 +346,5 @@ i{
 }
 
 .container__cards--portfolio{
-
+    width: 50%;
 }
