@@ -140,13 +140,12 @@
 
 .container{
     height: 100vh;
-    margin: 7% 0% 0%;
     /* box-shadow: 0px 15px 10px -15px gray;*/
 }
 
 .container__text{
     display: block;
-    margin-bottom: 5%;
+    padding-top: 4%;
     margin-inline: 4%;
 }
 
@@ -166,6 +165,7 @@
     display: flex;
     justify-content: space-between;
     margin-inline: 4%;
+    gap: 1rem;
 }
 
 .container__cards{
@@ -203,13 +203,14 @@
 }
 /*#2a5852  #282938*/
 .container__footer{
-    margin-top: 8.7%;
     display: flex;
     width: 100%;
     background-color: #2a5852;
     min-height: 50px;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    bottom: 0;
 }
 
 i{
@@ -269,7 +270,8 @@ i{
 
 .button--blue-linkedin{
     padding: 15px;
-    background-color: #5E3BEE;
+    background-color: #E62872;
+    border: none;
     color: #fff;
 }
 
@@ -340,4 +342,48 @@ i{
 
 .container__pointer .glider-dot.active{
     opacity: 1;
+}
+
+.container--testimonials{
+    background-color: #F5FCFF;
+}
+
+.container__grid{
+    padding: 20px 0;
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    margin-inline: 4%;
+}
+
+.grid__cards{
+    border-radius: 5px;
+    border: 1px solid #006B6A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.grid__title{
+    color: #006B6A;
+}
+
+.profile__photo{
+    width: 100%;
+    max-width: 50px;
+    border-radius: 100px;
+}
+
+.container__name-profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-inline: 10px;
+}
+
+.container__profile{
+    display: flex;
 }
