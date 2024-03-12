@@ -273,30 +273,65 @@
             <p class="container__paragraph"></p>
         </div>
 
-        <form action="" class="form">
-            <label for="first_name" class="form__label"></label>
-            <input type="text" id="first_name" class="form__input">
+        <form action="" class="form" id="form">
 
-            <label for="last_name" class="form__label"></label>
-            <input type="text" id="last_name" class="form__input">
+            <div class="form__group" id="name__group">
+                <label for="name" class="form__label">Nombre</label>
+                <div class="form__input-group">
+                    <input type="text" name="name" id="name" class="form__input" placeholder="Nombre">
+                    <i class="form__validate-status fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__input-error">El nombre tiene que ser de 2 a 16 digitos y solo puede contener letras</p>
+            </div>
 
-            <label for="email" class="form__label"></label>
-            <input type="text" id="email" class="form__input">
+            <div class="form__group" id="l-name__group">
+                <label for="l-name" class="form__label">Apellido</label>
+                <div class="form__input-group">
+                    <input type="text" name="l-name" id="l-name" class="form__input" placeholder="Apellido">
+                    <i class="form__validate-status fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__input-error">El apellido tiene que ser de 2 a 16 digitos y solo puede contener letras</p>
+            </div>
 
-            <label for="phone_number" class="form__label"></label>
-            <input type="text" id="phone_number" class="form__input">
+            <div class="form__group" id="email__group">
+                <label for="email" class="form__label">Correo Electrónico</label>
+                <div class="form__input-group">
+                    <input type="email" name="email" id="email" class="form__input" placeholder="Correo">
+                    <i class="form__validate-status fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__input-error">Correo Inválido</p>
+            </div>
 
-            <label for="topic" class="form__label"></label>
-            <select name="topic" id="topic">
-                <option value="">Selecciona una opción...</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
+            <div class="form__group" id="phone__group">
+                <label for="phone" class="form__label">Teléfono</label>
+                <div class="form__input-group">
+                    <input type="number" name="phone" id="phone" class="form__input" placeholder="Teléfono">
+                    <i class="form__validate-status fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__input-error">Telefono inválido</p>
+            </div>
 
-            <label for="bio" class="form__label"></label>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <div class="form__group" id="selecter__group">
+                <label for="selecter" class="form__label">Selecciona una opción</label>
+                <div class="form__input-group">
+                    <select name="selecter" id="selecter" required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <p class="form__input-error">Por favor selecciona una opción</p>
+            </div>
+
+            <div class="form__group" id="text__group">
+                <label for="text" class="form__label">Cuentame un poco sobre el proyecto:</label>
+                <div class="form__input-group">
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <p class="form__input-error"></p>
+            </div>
+
         </form>
 
         <button type="submit" class="button button--blue"></button>
