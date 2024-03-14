@@ -406,19 +406,9 @@ i{
     width: 90%;
     margin: auto;
     padding: 40px;
-}
-
-.form_all-first-group{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding-block: 20px;
-}
-
-.form__all-second-group{
-    display: flex;
-    flex-direction: column;
-    padding-block: 20px;
 }
 
 .text{
@@ -477,4 +467,11 @@ i{
     z-index: 100;
     font-size: 16px;
     opacity: 0;
+}
+
+.form__group--selecter,
+.form__group-btn-send,
+.form__message,
+.form__group--text-area{
+    grid-column: span 2;
 }
