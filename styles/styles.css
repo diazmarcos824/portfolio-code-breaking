@@ -475,3 +475,78 @@ i{
 .form__group--text-area{
     grid-column: span 2;
 }
+
+.form__message{
+    height: 45px;
+    line-height: 45px;
+    background-color: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.form__message-active{
+    display: block;
+}
+
+.form__group-btn-send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.form__button{
+    height: 45px;
+    width: 30%;
+    transition: .1s ease all;
+    text-transform: uppercase;
+    min-width: 80px;
+}
+
+.form__button:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.form__message-success{
+    font-size: 14px;
+    margin-block: 20px;
+    color: #119200;
+    display: none;
+}
+
+.form__message-success-active{
+    display: block;
+}
+/*Validaciones*/
+.form__group-good .form__validate-status{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form__group-bad .form__label{
+    color: #bb2929;
+}
+
+.form__group-bad .form__validate-status{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form__group-bad .form__input{
+    border: 3px solid #bb2929;
+}
+
+/*Form Media Queries*/
+@media screen and (max-width: 750px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form__group--selecter,
+    .form__group-btn-send,
+    .form__message,
+    .form__group--text-area{
+        grid-column: 1;
+    }
+}
