@@ -464,7 +464,7 @@ i{
     position: absolute;
     right: 10px;
     bottom: 15px;
-    z-index: 100;
+    z-index: 0;
     font-size: 16px;
     opacity: 0;
 }
@@ -535,6 +535,16 @@ i{
 
 .form__group-bad .form__input{
     border: 3px solid #bb2929;
+}
+
+.error_message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error__icon{
+    color: black;
 }
 
 /*Form Media Queries*/
