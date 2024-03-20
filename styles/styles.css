@@ -139,6 +139,12 @@ html{
     width: auto;
 }
 
+.justify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 950px) {
     .landing__right{
         display: none;
@@ -192,7 +198,7 @@ html{
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem,2fr));
     margin-inline: 4%;
 
 }
@@ -380,7 +386,7 @@ i{
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     margin-inline: 4%;
 }
 
@@ -398,6 +404,7 @@ i{
     justify-content: flex-start;
     border-radius: 10px;
     border: none;
+    max-width: 350px;
 }
 
 .grid__title{
