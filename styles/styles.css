@@ -7,6 +7,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+
 .header{
     display: block;
     position: fixed;
@@ -21,11 +22,12 @@
     justify-content: space-between;
     padding: 0 20px;
     margin: 12px 0;
+    z-index: 200;
 }
 
 .nav__logo{
-    width: 100%;
-    max-width: 50px;
+    max-width: 120px;
+    margin-block: 10px;
 }
 
 .nav__list{
@@ -286,6 +288,7 @@ i{
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 0;
 }
 
 .container__div--portfolio{
