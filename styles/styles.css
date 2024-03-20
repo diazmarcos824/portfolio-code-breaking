@@ -7,6 +7,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+html{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 540px) {
+    html{
+        font-size: 12px;
+    }
+}
 
 .header{
     display: block;
@@ -38,7 +47,7 @@
 .nav__item{
     padding: 0 10px;
     color: #282938;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -93,14 +102,14 @@
 .landing__title{
     padding: 10px 0px;
     color: #282938;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .landing__description{
     padding: 10px 0px;
     color: #282938;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .landing__title--blue{
@@ -114,19 +123,25 @@
     color: #fff;
 }
 
+.flex-end{
+    display: flex;
+    height: fit-content;
+    align-items: end;
+    justify-content: center;
+}
+
 .landing__right{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
+    width: auto;
 }
 
 .landing__overhide{
     background-color: #caddec;
     min-height: 300px;
-    max-height: 300px;
     min-width: 450px;
     border-radius: 40px;
-    margin-top: 23.1%;
 }
 
 .landing__photo-container{
@@ -136,7 +151,7 @@
 }
 
 .landing__photo{
-    max-width: 300px;
+    max-width: 320px;
     z-index: 0;
 }
 
@@ -145,7 +160,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* box-shadow: 0px 15px 10px -15px gray;*/
 }
 
 .container__text{
@@ -163,7 +177,7 @@
 .container__title{
     color: #282938;
     padding: 15px 0px;
-    font-size: 42px;
+    font-size: 2.63rem;
 }
 
 .container__div{
@@ -174,10 +188,7 @@
     margin-inline: 4%;
 
 }
-/*  display: flex;
-    justify-content: space-between;
-    margin-inline: 4%;
-    gap: 1rem;*/
+
 .container__cards{
     background-color: #F5FCFF;
     border-radius: 10px;
@@ -202,7 +213,7 @@
 }
 
 .card__title{
-    font-size: 22px;
+    font-size: 1.38rem;
     color: #282938;
     padding-block: 20px;
 }
@@ -211,7 +222,7 @@
     color: #282938;
     font-size: 14px;
 }
-/*#2a5852  #282938*/
+
 .container__footer{
     display: flex;
     width: 100%;
@@ -236,7 +247,7 @@ i{
 
 .container__bio{
     font-size: 14px;
-    text-align: justify;
+    /*text-align: justify;*/
     padding-block: 3px;
 }
 
@@ -271,7 +282,7 @@ i{
 }
 
 .button--linkedin{
-    font-size: 30px;
+    font-size: 1.88rem;
     padding-inline: 30px;
 }
 
@@ -307,7 +318,7 @@ i{
     position: absolute;
     border: none;
     background-color: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     height: 10%;
     top: calc(50% - 10%);
     line-height: 40px;
@@ -484,7 +495,7 @@ i{
     right: 10px;
     bottom: 15px;
     z-index: 0;
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 0;
 }
 
@@ -628,3 +639,21 @@ i{
 .socials__icon:hover{
     color: #5E3BEE;
 }
+
+.text-balance{
+    text-wrap: balance;
+}
+
+.text-pretty{
+    text-wrap: pretty;
+}
+
+.img--responsive{
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 6.2/8;
+    object-fit: cover;
+}
+
+/*Media Queries for responsive design*/
+
