@@ -59,6 +59,46 @@ html{
     color: #5E3BEE;
 }
 
+/*Burguer Menu*/
+
+.menu--open,
+.menu--close {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .menu--open,
+    .menu--close{
+        display: block;
+    }
+
+    .nav .button{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position:absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #F5FCFF;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav--visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
 .button{
     background-color: #fff;
     color: #5E3BEE;
