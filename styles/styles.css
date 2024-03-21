@@ -85,7 +85,7 @@ html{
         display: none;
     }
 
-    .header .nav .nav__list{
+    .nav__list{
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -254,7 +254,7 @@ html{
 
 @media screen and (max-width: 575px) {
     #container__div{
-        margin-inline: auto;
+        margin-inline: 4%;
     }
 }
 
@@ -380,6 +380,7 @@ i{
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
+    margin: 0 50px !important;
 }
 
 .arrow{
@@ -407,11 +408,11 @@ i{
 }
 
 .left--arrow{
-    left: -40px;
+    left: 0px;
 }
 
 .right--arrow{
-    right: -40px;
+    right: 0px;
 }
 
 .container__pointer .glider-dot{
@@ -739,5 +740,14 @@ i{
 
     .non-padding-left{
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .footer--padding-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
