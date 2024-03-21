@@ -112,7 +112,7 @@ html{
     background-color: #fff;
     color: #5E3BEE;
     border: 1px solid #5E3BEE;
-    padding: 0px 15px;
+    padding: 15px 15px;
     border-radius: 3px;
     cursor: pointer;
     max-width: 150px;
@@ -336,6 +336,8 @@ i{
 
 .photo__portfolio{
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px gray;
 }
 
 .container__bio--portfolio-desc{
@@ -750,4 +752,8 @@ i{
         align-items: center;
         justify-content: center;
     }
+}
+
+.margin-top{
+    padding-top: 5%;
 }

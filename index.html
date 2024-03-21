@@ -18,22 +18,26 @@
             <button class="menu-btn menu--open nav--visible" id="open" ><i class="menu-icons fa-solid fa-bars"></i></button>
             <ul class="nav__list" id="nav">
                 <button class="menu-btn menu--close" id="close"><i class="menu-icons fa-solid fa-xmark"></i></button>
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Portafolio</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Sobre mi</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Recomendaciones</a></li>
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#portfolio">Portafolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">Sobre mi</a></li>
+                <li class="nav__item"><a class="nav__link" href="#testimonials">Recomendaciones</a></li>
             </ul>
-            <button class="button button--contact">Contáctame</button>
+            <a href="#contact">
+                <button class="button button--contact">Contáctame</button>
+            </a>
         </nav>
     </header>
 
-    <section class="landing">
+    <section class="landing" id="home">
         <div class="landing__content">
             <div class="landing__left">
                 <span class="landing__span">Hey, soy Marcos!</span>
                 <h1 class="landing__title text-balance">Desarrollo <span class="landing__title--blue">páginas web</span> con soluciones óptimas</h1>
                 <h3 class="landing__description text-balance">Incorporando técnicas eficaces en el rendimiento y la accesibilidad que ofrecen experiencias digitales inmersivas.</h3>
-                <button class="button button--blue">Contacta conmigo!</button>
+                <a href="#contact">
+                    <button class="button button--blue">Contacta conmigo!</button>
+                </a>
 
             </div>
 
@@ -114,7 +118,7 @@
 
     </section>
 
-    <section class="container container--about">
+    <section class="container container--about margin-top" id="about">
         <div class="justify-center">
             <div class="container__text">
                 <span class="container__span">Un poco más</span>
@@ -138,7 +142,9 @@
                 </p>
 
                 <div class="container__button">
-                <button class="button button--blue">Contácme</button>
+                    <a href="#contact">
+                        <button class="button button--blue">Contácme</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -154,14 +160,16 @@
         </div>
     </section>
 
-    <section class="container container--portfolio">
+    <section class="container container--portfolio margin-top" id="portfolio">
         <div class="container__text container__text--flex-space-between">
             <div class="text__portfolio">
                 <span class="container__span">Proyectos Recientes</span>
                 <h2 class="container__title">Mi Portafolio</h2>
             </div>
             <div>
-                <button class="button button--blue-linkedin"><i class="fa-brands fa-linkedin button--linkedin"></i></button>
+                <a href="https://www.linkedin.com/in/diazmarcoscb/" target="_blank">
+                    <button class="button button--blue-linkedin"><i class="fa-brands fa-linkedin button--linkedin"></i></button>
+                </a>
             </div>
         </div>
 
@@ -172,41 +180,41 @@
 
                     <div class="carousel">
                             <div class="container__cards container__cards--portfolio">
-                                <a href="#">
-                                    <img class="photo__portfolio" src="images/portfolio-example.png" alt="">
-                                    <h3 class="card__title text-balance">Lorem, ipsum dolor sit amet</h3>
+                                <a href="https://jacmotors.com.co/" target="_blank">
+                                    <img class="photo__portfolio" src="images/portfolio/jacmotors.jpg" alt="">
+                                    <h3 class="card__title text-balance">JacMotors</h3>
                                     <p class="container__bio container__bio--portfolio-desc text-pretty">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus voluptates at ea rem. 
                                     Esse, neque ullam eligendi distinctio nobis odit nisi ratione facere in modi quae deserunt, nulla aliquid!</p>
                                 </a>
                             </div>
                             <div class="container__cards container__cards--portfolio">
-                                <a href="#">
-                                    <img class="photo__portfolio" src="images/portfolio-example.png" alt="">
-                                    <h3 class="card__title text-balance">Lorem, ipsum dolor sit amet</h3>
+                                <a href="https://roeljoyas.com/colombia/" target="_blank">
+                                    <img class="photo__portfolio" src="images/portfolio/roeljoyas.jpg" alt="">
+                                    <h3 class="card__title text-balance">Roel Joyas</h3>
                                     <p class="container__bio container__bio--portfolio-desc text-pretty">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus voluptates at ea rem. 
                                     Esse, neque ullam eligendi distinctio nobis odit nisi ratione facere in modi quae deserunt, nulla aliquid!</p>
                                 </a>
                             </div>
                             <div class="container__cards container__cards--portfolio">
-                                <a href="#">
-                                    <img class="photo__portfolio" src="images/portfolio-example.png" alt="">
-                                    <h3 class="card__title text-balance">Lorem, ipsum dolor sit amet</h3>
+                                <a href="https://euskofriz.com/" target="_blank">
+                                    <img class="photo__portfolio" src="images/portfolio/euskofriz.jpg" alt="">
+                                    <h3 class="card__title text-balance">Euskofriz</h3>
                                     <p class="container__bio container__bio--portfolio-desc text-pretty">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus voluptates at ea rem. 
                                     Esse, neque ullam eligendi distinctio nobis odit nisi ratione facere in modi quae deserunt, nulla aliquid!</p>
                                 </a>
                             </div>
                             <div class="container__cards container__cards--portfolio">
-                                <a href="#">
-                                    <img class="photo__portfolio" src="images/portfolio-example.png" alt="">
-                                    <h3 class="card__title text-balance">Lorem, ipsum dolor sit amet</h3>
+                                <a href="https://quemagia.com/co/" target="_blank">
+                                    <img class="photo__portfolio" src="images/portfolio/quemagia.jpg" alt="">
+                                    <h3 class="card__title text-balance">Que Magia</h3>
                                     <p class="container__bio container__bio--portfolio-desc text-pretty">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus voluptates at ea rem. 
                                     Esse, neque ullam eligendi distinctio nobis odit nisi ratione facere in modi quae deserunt, nulla aliquid!</p>
                                 </a>
                             </div>
                             <div class="container__cards container__cards--portfolio">
-                                <a href="#">
-                                    <img class="photo__portfolio" src="images/portfolio-example.png" alt="">
-                                    <h3 class="card__title text-balance">Lorem, ipsum dolor sit amet</h3>
+                                <a href="https://ecokclimatizacion.cl/" target="_blank">
+                                    <img class="photo__portfolio" src="images/portfolio/ecokclimatizacion.jpg" alt="">
+                                    <h3 class="card__title text-balance">Ecokclimatización</h3>
                                     <p class="container__bio container__bio--portfolio-desc text-pretty">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus voluptates at ea rem. 
                                     Esse, neque ullam eligendi distinctio nobis odit nisi ratione facere in modi quae deserunt, nulla aliquid!</p>
                                 </a>
@@ -223,7 +231,7 @@
 
     </section>
 
-    <section class="container container--testimonials">
+    <section class="container container--testimonials" id="testimonials">
         <div class="container__text">
             <span class="container__span">Testimonios</span>
             <h2 class="container__title">Recomendaciones</h2>
@@ -269,7 +277,7 @@
         </div>
     </section>
 
-    <section class="container container--contact">
+    <section class="container container--contact" id="contact">
         <div class="container__text text--contact">
             <span class="container__span">Siempre estoy dispuesto a nuevos retos!</span>
             <h2 class="container__title">Contáctame</h2>
