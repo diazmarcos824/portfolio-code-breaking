@@ -59,6 +59,15 @@ html{
     color: #5E3BEE;
 }
 
+.menu-icons{
+    color: #5E3BEE;
+}
+
+.menu-btn{
+    background-color: inherit;
+    border: none;
+}
+
 /*Burguer Menu*/
 
 .menu--open,
@@ -66,7 +75,7 @@ html{
     display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 675px) {
     .menu--open,
     .menu--close{
         display: block;
@@ -76,7 +85,7 @@ html{
         display: none;
     }
 
-    .nav__list{
+    .header .nav .nav__list{
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -238,9 +247,15 @@ html{
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(19rem,2fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     margin-inline: 4%;
+    margin-bottom: 4%;
+}
 
+@media screen and (max-width: 575px) {
+    #container__div{
+        margin-inline: auto;
+    }
 }
 
 .container__cards{
@@ -301,7 +316,6 @@ i{
 
 .container__bio{
     font-size: 14px;
-    /*text-align: justify;*/
     padding-block: 3px;
 }
 
@@ -426,7 +440,7 @@ i{
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
     margin-inline: 4%;
 }
 
@@ -710,5 +724,20 @@ i{
     object-fit: cover;
 }
 
-/*Media Queries for responsive design*/
+@media screen and (max-width: 950px) {
+    #footer__nav{
+        display: none;
+    }
+}
 
+@media screen and (max-width: 535px) {
+    #footer__bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .non-padding-left{
+        padding-left: 0;
+    }
+}
