@@ -447,6 +447,11 @@ i{
     margin-inline: 4%;
 }
 
+.dragging{
+    cursor: grab;
+    user-select: none;
+}
+
 .grid__cards{
     border-radius: 5px;
     border: 1px solid #006B6A;
