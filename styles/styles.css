@@ -439,12 +439,46 @@ i{
 }
 
 .container__grid{
-    padding: 20px 0;
+    /*padding: 20px 0;
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
-    margin-inline: 4%;
+    margin-inline: 4%;*/
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    min-height: 350px;
+}
+
+@media screen and (max-width: 900px) {
+    .container__grid {
+    grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .container__grid {
+    grid-auto-columns: 100%;
+    }
+}
+
+.wrap{
+    margin-inline: auto;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.no-transition{
+    scroll-behavior: auto;
 }
 
 .dragging{
@@ -453,12 +487,15 @@ i{
 }
 
 .grid__cards{
+    scroll-snap-align: start;
+    cursor: pointer;
     border-radius: 5px;
     border: 1px solid #006B6A;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10%;
+    margin: 1px;
 }
 
 .grid__cards--skills{
