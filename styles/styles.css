@@ -85,7 +85,7 @@ html{
         display: none;
     }
 
-    .nav__list{
+    #nav{
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -769,12 +769,6 @@ i{
     object-fit: cover;
 }
 
-@media screen and (max-width: 950px) {
-    #footer__nav{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 535px) {
     #footer__bottom{
         display: flex;
@@ -793,6 +787,26 @@ i{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 955px){
+    #footer__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;
+        gap: 15px;
+    }
+
+    #footer__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-block: 8px;
+        gap: 8px;
     }
 }
 
