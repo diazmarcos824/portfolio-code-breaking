@@ -11,7 +11,7 @@ html{
     font-size: 16px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 850px) {
     html{
         font-size: 12px;
     }
@@ -39,7 +39,7 @@ html{
     margin-block: 10px;
 }
 
-.nav__list{
+.nav__list--header, .nav__list--footer{
     display: flex;
     align-items: center;
 }
@@ -85,7 +85,7 @@ html{
         display: none;
     }
 
-    #nav{
+    .nav__list--header{
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -131,7 +131,7 @@ html{
     display: flex;
     margin-top: 12%;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-inline: 40px;
 }
 
@@ -714,6 +714,10 @@ i{
     background-color: #F5FCFF;
     margin-bottom: 5vh;
     padding: 70px;
+}
+
+.footer > .nav{
+    z-index: 0;
 }
 
 .footer_span{
