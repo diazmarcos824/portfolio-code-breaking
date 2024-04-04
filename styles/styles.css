@@ -8,12 +8,12 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 850px) {
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -47,7 +47,7 @@ html{
 .nav__item{
     padding: 0 10px;
     color: #282938;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
@@ -75,6 +75,10 @@ html{
     display: none;
 }
 
+.transition{
+    transition: .5s;
+}
+
 @media screen and (max-width: 675px) {
     .menu--open,
     .menu--close{
@@ -83,6 +87,12 @@ html{
 
     .nav .button{
         display: none;
+    }
+
+    #content-nav > .menu-btn{
+        position: absolute;
+        right: 7%;
+        top: 30%;
     }
 
     .nav__list--header{
@@ -101,6 +111,7 @@ html{
         visibility: hidden;
     }
 
+
     .nav--visible {
         opacity: 1;
         visibility: visible;
@@ -115,15 +126,17 @@ html{
     padding: 15px 15px;
     border-radius: 3px;
     cursor: pointer;
-    max-width: 150px;
+    max-width: 160px;
+    font-size: 0.8rem;
 }
 
 .landing{
-    height: 100vh;
+    height: auto;
     display: flex;
     width: 100%;
     box-shadow: 0px 1px 5px gray;
     background-color: #F5FCFF;
+    min-height: 100vh;
 }
 
 .landing__content{
@@ -133,6 +146,7 @@ html{
     width: 100%;
     justify-content: space-evenly;
     margin-inline: 40px;
+    margin-bottom: 3%;
 }
 
 
@@ -140,12 +154,11 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 600px;
 }
 
 .landing__span{
     padding: 10px 0px;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #282938;
 }
@@ -183,27 +196,32 @@ html{
 
 .landing__right{
     display: flex;
-    align-items: center;
+    margin: auto;
     justify-content: center;
-    width: auto;
+    width: 75%;
 }
 
 .justify-center{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 50%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 785px) {
     .landing__right{
         display: none;
+    }
+
+    .justify-center{
+        max-width: 100%;
     }
 }
 
 .landing__overhide{
     background-color: #caddec;
-    min-height: 300px;
-    min-width: 450px;
+    min-height: 30vmax;
+    min-width: 40vmax;
     border-radius: 40px;
 }
 
@@ -214,7 +232,7 @@ html{
 }
 
 .landing__photo{
-    max-width: 320px;
+    max-height: 38vmax;
     z-index: 0;
 }
 
@@ -232,7 +250,7 @@ html{
 
 .container__span{
     color: #282938;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
@@ -253,7 +271,7 @@ html{
 
 @media screen and (max-width: 575px) {
     #container__div{
-        margin-inline: 4%;
+        margin: auto;
     }
 }
 
@@ -288,7 +306,7 @@ html{
 
 .card__description{
     color: #282938;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .container__footer{
@@ -315,8 +333,8 @@ i{
 }
 
 .container__bio{
-    font-size: 14px;
-    padding-block: 3px;
+    font-size: 0.8rem;
+    padding-block: 1px;
 }
 
 .container__button{
@@ -481,6 +499,10 @@ i{
     scroll-behavior: auto;
 }
 
+.grid__description{
+    font-size: 0.8rem;
+}
+
 .dragging{
     cursor: grab;
     user-select: none;
@@ -508,12 +530,17 @@ i{
 
 .grid__title{
     color: #006B6A;
+    font-size: 1.38rem;
 }
 
 .profile__photo{
     width: 100%;
     max-width: 50px;
     border-radius: 100px;
+}
+
+.profile__name{
+    font-size: 0.9rem;
 }
 
 .container__name-profile{
@@ -595,7 +622,7 @@ i{
 }
 
 .form__input-error{
-    font-size: 12px;
+    font-size: 0.8rem;
     margin-bottom: 0;
     display: none;
 }
@@ -653,7 +680,7 @@ i{
 }
 
 .form__message-success{
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-block: 20px;
     color: #119200;
     display: none;
@@ -721,7 +748,7 @@ i{
 }
 
 .footer_span{
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .footer__list--border{
